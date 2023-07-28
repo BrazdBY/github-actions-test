@@ -11,8 +11,8 @@ jobs:
           echo "Chrome version: $CHROME_VERSION"
           CHROME_VERSION=${CHROME_VERSION%.*}
           echo "Short Chrome version: $CHROME_VERSION"
-          apt-get update
-          apt-get --only-upgrade install google-chrome-stable
+          sudo apt-get update
+          sudo apt-get --only-upgrade install google-chrome-stable
           
           CHROME_VERSION=$(google-chrome --product-version)
           echo "Chrome version: $CHROME_VERSION"
